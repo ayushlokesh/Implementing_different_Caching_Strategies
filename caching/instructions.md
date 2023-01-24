@@ -30,7 +30,7 @@ You are given the following files:
 * ```cache.py``` Within this file there are three classes defined:
   ```CyclicCache```, ```LRUCache``` and ```RandomCache```.
 * ```utilities.py``` Utilities including creation of sample "memory". 
-* ```test.py``` Sample unit tests 
+* ```test_simple.py``` Sample unit tests 
 * ```harness.py``` Sample driver file 
 
 There are some useful functions defined in ```utilities.py``` that
@@ -88,13 +88,13 @@ is no overridden implementation of lookup with caching. That's your task!
 
 ## Testing
 
-A few simple tests are defined in ```test.py```. You can run them using:
+A few simple tests are defined in ```test_simple.py```. You can run them using:
 
-```python test.py```
+```python test_simpl.py```
 
 or
 
-```python -m unittest -v test.py```
+```python -m unittest -v test_simple.py```
 
 if you'd like a little more information.
 
@@ -128,7 +128,7 @@ assertEquals(someValue,0)
 
 will **fail** if someValue is not equal to 0.
 
-Note that some of the tests in ```test.py``` are designed to **fail**
+Note that some of the tests in ```test_simple.py``` are designed to **fail**
 on the given code skeletons. For example, in```TestCaseB```,
 ```test_cyclic``` performs the following on the ```CyclicCache```
 implementation:
@@ -150,7 +150,7 @@ takes place, and can be used to repeatedly track progress as code is written.
 
 These tests are in no way comprehensive and simply provide some checks
 that the code runs and returns results in an expected format. Code
-that fails tests in ```test.py``` is unlikely to get a passing mark.
+that fails tests in ```test_simple.py``` is unlikely to get a passing mark.
 
 We recommend that you develop your own tests, either using the
 ```unittest``` framework or hand-crafted cases. Share them with your
@@ -244,13 +244,13 @@ The code will be autograded using a system called
 **GradeScope**. Gradescope will pull code from your gitlab repository
 and then run a sequence of tests, generating a mark. 
 
-You should check that the results of the tests in ```simple_test.py``` are as
+You should check that the results of the tests in ```test_simple.py``` are as
 expected: this is where basic issues with your code such as syntax
 errors or the use of additional libraries may be picked up.
 
 On submission, Gradescope will run a set of tests and the results will
 be reported. These will include similar tests to those in
-```simple_test.py```. It will also run a series of additional, hidden
+```test_simple.py```. It will also run a series of additional, hidden
 tests against your code, checking that the caching strategies are
 performing as they are supposed to.
 
