@@ -260,10 +260,11 @@ asked to authorise the application. Once you have done this, you will
 be able to select a repository and branch to submit. The code on that
 branch will then be pulled by Gradescope and tests will be run.
 
-Note that you will receive some feedback on test performance, but your
-mark will not be visible until after the submission date. You can
-continue to develop code and resubmit as many times as you wish before
-the deadline: tests will be rerun on re-submission.
+Note that you will receive some feedback on test performance, but the
+results of all the hidden tests, and thus your final mark will not be
+visible until after the submission date. You can continue to develop
+code and resubmit as many times as you wish before the deadline: tests
+will be rerun on re-submission.
 
 Do **not** use any non-standard libraries (e.g. libraries that must be
 installed via ```pip```). If you do this, the code may fail to run.
