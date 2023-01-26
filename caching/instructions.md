@@ -34,7 +34,10 @@ You are given the following files:
 * ```harness.py``` Sample driver file 
 
 There are some useful functions defined in ```utilities.py``` that
-will generate some sample memory data. These are used in the harness. 
+will generate some sample memory data. These are used in the harness.
+
+Comments in the code provide some more insight into the structure and
+the tasks required. 
 
 ## Running the code
 
@@ -90,11 +93,11 @@ is no overridden implementation of lookup with caching. That's your task!
 
 A few simple tests are defined in ```test_simple.py```. You can run them using:
 
-```python test_simpl.py```
+```python3 test_simple.py```
 
 or
 
-```python -m unittest -v test_simple.py```
+```python3 -m unittest -v test_simple.py```
 
 if you'd like a little more information.
 

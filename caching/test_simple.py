@@ -1,5 +1,4 @@
 from memory import Memory
-from gradescope_utils.autograder_utils.decorators import weight, number, visibility
 from cache import CyclicCache, LRUCache, RandomCache
 import utilities
 import unittest
