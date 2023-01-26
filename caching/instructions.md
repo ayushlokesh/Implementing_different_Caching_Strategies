@@ -269,6 +269,20 @@ visible until after the submission date. You can continue to develop
 code and resubmit as many times as you wish before the deadline: tests
 will be rerun on re-submission.
 
+You will see that if you simply submit the code skeletons that we have
+provided without making any changes, a number of tests will pass (and
+some will fail). This allows you to check that the submission
+framework is working as expected. Note that the tests that are passed
+by the skeleton are zero-weighted, so submission of the skeleton code
+will result in a mark of 0.
+
+We suggest you do this before you start making any changes in order to
+check that the submission mechanism is working properly.
+
+Failed tests may give some message or indication as to the issue, for
+example ```"Cache hit counts do not match``` if the number of times
+the cache is hit does not match the expected value. 
+
 Do **not** use any non-standard libraries (e.g. libraries that must be
 installed via ```pip```). If you do this, the code may fail to run.
 
