@@ -86,9 +86,9 @@ user@computer> python3 harness.py -s LRU < in-10.txt
 ```
 
 This will use the LRU implementation. Note that in the skeleton code
-given, this will return the *same* value for memory hits (and null for
-cache hits) as for the Memory as there is no overridden implementation
-of lookup with caching. That's your task!
+given, this will return the *same* value for memory hits (and the
+wrong value for cache hits) as for the Memory as there is no
+overridden implementation of lookup with caching. That's your task!
 
 ## Testing
 
@@ -259,7 +259,11 @@ tests against your code, checking that the caching strategies are
 performing as they are supposed to.
 
 On the submission page for the exercise, you will see an option to
-submit via gitlab. When you do this for the first time, you will be
+submit via gitlab.
+
+![Submission](images/submission.png)
+
+When you do this for the first time, you will be
 asked to authorise the application. Once you have done this, you will
 be able to select a repository and branch to submit. The code on that
 branch will then be pulled by Gradescope and tests will be run.
