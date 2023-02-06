@@ -58,7 +58,7 @@ if __name__ == '__main__':
                                         model.lookup(location),
                                         bcolours.RESET))
         location = sys.stdin.readline().strip()
-    print("Model: {}{}{}".format(bcolours.BLACK, model.name(), bcolours.RESET))
-    print("{}{:03d} Accesses{}".format(bcolours.YELLOW, count,bcolours.RESET))
-    print("{}{:03d} Memory Hits{}".format(bcolours.YELLOW, model.get_memory_hit_count(), bcolours.RESET))
-    print("{}{:03d} Cache Hits{}".format(bcolours.YELLOW, model.get_cache_hit_count(), bcolours.RESET))
+    print(f"Model: {bcolours.BLACK}{model.name()}{bcolours.RESET}")
+    print(f"{bcolours.YELLOW}{count} Accesses{bcolours.RESET}")
+    print(f"{bcolours.YELLOW}{model.get_memory_hit_count()} Memory Hits{bcolours.RESET}")
+    print(f"{bcolours.YELLOW}{model.get_cache_hit_count()} Cache Hits{bcolours.RESET}")

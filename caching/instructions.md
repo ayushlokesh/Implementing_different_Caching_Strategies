@@ -66,9 +66,9 @@ user@computer> python3 harness.py < in-10.txt
 009, 1, c81e728d
 010, 2, c4ca4238
 Model: Memory
-010 Accesses
-010 Memory Hits
-000 Cache Hits
+10 Accesses
+10 Memory Hits
+0 Cache Hits
 ```
 
 This is reporting that in step ```001```, location ```0``` was
@@ -86,8 +86,9 @@ user@computer> python3 harness.py -s LRU < in-10.txt
 ```
 
 This will use the LRU implementation. Note that in the skeleton code
-given, this will return the *same* values as for the Memory as there
-is no overridden implementation of lookup with caching. That's your task!
+given, this will return the *same* value for memory hits (and null for
+cache hits) as for the Memory as there is no overridden implementation
+of lookup with caching. That's your task!
 
 ## Testing
 
