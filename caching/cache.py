@@ -17,7 +17,7 @@ class AbstractCache(Memory):
 
     # Returns information on the number of cache hit counts
     def get_cache_hit_count(self):
-        # TODO: Edit this to correctly return the count of cache hits.
+        # TODO: Edit this code to correctly return the count of cache hits.
         return None
     
 class CyclicCache(AbstractCache):
