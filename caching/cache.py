@@ -71,6 +71,8 @@ class LRUCache(AbstractCache):
         self.cache_memory = [None]*size
         self.size = size
         self.priority_tracker = [0]*size
+        if self.size <= 0:
+            self.size = 5
 
     def lookup(self, address):
         for i in range(0,self.size):
@@ -107,6 +109,8 @@ class RandomCache(AbstractCache):
         self.cache = [None]*size
         self.cache_memory = [None]*size
         self.size = size
+        if self.size <= 0:
+            self.size = 5
 
     def lookup(self, address):
         if address in self.cache:
