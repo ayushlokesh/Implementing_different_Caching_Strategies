@@ -37,7 +37,8 @@ class CyclicCache(AbstractCache):
         self.cache_memory = [None]*size
         self.size = size
         self.cycle_tracker = 0
-
+        if self.size <= 0:
+            self.size = 5
 
     def lookup(self, address):
         if address in self.cache:
