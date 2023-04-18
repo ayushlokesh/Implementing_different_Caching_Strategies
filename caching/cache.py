@@ -37,10 +37,10 @@ class CyclicCache(AbstractCache):
         self.cache_memory = [None]*size
         self.size = size
         self.cycle_tracker = 0
-        if self.size <= 0:
-            self.size = 5
 
     def lookup(self, address):
+        if self.size <= 0:
+            return super().lookup(address)
         if address in self.cache:
             self.cache_hit_count += 1
             return self.cache_memory[self.cache.index(address)]
@@ -71,10 +71,10 @@ class LRUCache(AbstractCache):
         self.cache_memory = [None]*size
         self.size = size
         self.priority_tracker = [0]*size
-        if self.size <= 0:
-            self.size = 5
 
     def lookup(self, address):
+        if self.size <= 0:
+            return super().lookup(address)
         for i in range(0,self.size):
                 if self.cache[i] != address and self.cache[i] != None:
                     self.priority_tracker[i] += 1
@@ -109,10 +109,11 @@ class RandomCache(AbstractCache):
         self.cache = [None]*size
         self.cache_memory = [None]*size
         self.size = size
-        if self.size <= 0:
-            self.size = 5
+        
 
     def lookup(self, address):
+        if self.size <= 0:
+            return super().lookup(address)
         if address in self.cache:
             self.cache_hit_count += 1
             return self.cache_memory[self.cache.index(address)]
